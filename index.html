@@ -59,17 +59,20 @@
 
   <body>
     <nav class="navbar container-centered">
-      <h1>75attendance Calculator</h1>
-      <div class="navbar-sub-heading">
-        <p>
-          Find out the number of days you can bunk while still maintaining 75%
-          attendance
-        </p>
-        <p>or the number of days you should attend to attain 75% attendance.</p>
-      </div>
+      <h1>Attendance Calculator</h1>
+      
     </nav>
     <div class="divider"></div>
+    
     <main class="container-centered">
+        <div class="sub-heading">
+          <p>
+            Find out the number of days you can bunk while still maintaining 75%
+            attendance
+          </p>
+          <p>or the number of days you should attend to attain 75% attendance.</p>
+        </div>
+      <div class="mainbody"></div>
       <div class="input-container percentage-select-container">
         <label for="percentage">Percentage Required</label>
         <select name="percentage" id="percentage" class="percentage-select">
@@ -105,7 +108,9 @@
         </div>
         <button id="btn" class="calculate-btn">Calculate</button>
       </div>
+    </div>
     </main>
+
     <div id="output-div" class="output-text"></div>
     <footer id="footer" class="footer">
       <p>
