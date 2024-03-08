@@ -42,10 +42,10 @@ const daysToBunk = (present, total, percentage) => {
 };
 
 const daysToBunkText = (daysAvailableToBunk, present, total) =>
-  `You can bunk for <strong>${daysAvailableToBunk}</strong> more days.<br>Current Attendance: <strong>${present}/${total}</strong> -> <strong>${(
-    (present / total) *
-    100
-  ).toFixed(2)}%</strong><br>Attendance Then: <strong>${present}/${
+  `You can bunk for <strongg>${daysAvailableToBunk}</strongg> more days.<br>Current Attendance: 
+  <strong>${present}/${total}</strong> -> 
+  <strongg>${((present / total) * 100).toFixed(2)}% </strongg>
+  <br> Attendance Then: <strong>${present}/${
     daysAvailableToBunk + total
   }</strong> -> <strong>${(
     (present / (daysAvailableToBunk + total)) *
@@ -53,10 +53,10 @@ const daysToBunkText = (daysAvailableToBunk, present, total) =>
   ).toFixed(2)}%</strong>`;
 
 const daysToAttendClassText = (attendanceNeeded, present, total, percentage) =>
-  `You need to attend <strong>${attendanceNeeded}</strong> more classes to attain ${percentage}% attendance<br>Current Attendance: <strong>${present}/${total}</strong> ->  <strong>${(
-    (present / total) *
-    100
-  ).toFixed(2)}%</strong><br>Attendance Required: <strong>${
+  `You need to attend <strongr>${attendanceNeeded}</strongr> more classes to attain ${percentage}% 
+    attendance<br>Current Attendance: <strong>${present}/${total}</strong> ->  <strongr>${(
+    (present / total) *100).toFixed(2)}%</strongr>
+    <br>Attendance Required: <strong>${
     attendanceNeeded + present
   }/${attendanceNeeded + total}</strong> -> <strong>${(
     ((attendanceNeeded + present) / (attendanceNeeded + total)) *

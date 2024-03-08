@@ -16,6 +16,13 @@ strong {
   font-family: monospace;
 }
 
+strong {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  font-family: monospace;
+}
+
+
 .banner {
   background-color: #dedde3;
   color: #ffffff;
